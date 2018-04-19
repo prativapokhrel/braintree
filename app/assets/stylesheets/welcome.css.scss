@@ -1,0 +1,77 @@
+// styling for welcome page
+
+#banner {
+  background-image: url(image_path("bubble.jpg"));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  min-height: 100px;
+  display: table;
+}
+.banner_content {
+  margin-top: 200px;
+  vertical-align: middle;
+  text-align: center;
+  h1 {
+    @include bold_font;
+    color: #5e81b3;
+    font-size: 5rem;
+    margin: 0;
+  }
+  p {
+    color: #5e81b3;
+
+    font-size: 2rem;
+    margin: 0 0 2.5rem 0;
+  }
+  .button {
+    background-color: #5e81b3;
+    font-size: 30px;
+  }
+}
+
+#testimonial {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #afb0b0;
+  padding: 3.5rem 0;
+  .quote {
+    margin: 0 0 0.5rem 0;
+  }
+
+  .name {
+    @include bold_font;
+    color: $dark_gray;
+    margin: 0;
+    font-size: 0.85rem;
+  }
+}
+
+#callouts {
+  background-image: url(image_path("computer.jpg"));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-top: 200px;
+  width: 100%;
+  min-height: 600px;
+  display: table;
+  p {
+    padding-top: 300px;
+    color: white;
+  }
+}
+
+.footer {
+  margin-top: 150px;
+  text-align: center;
+  margin-bottom: 200px;
+  h2 {
+    color: #5e81b3;
+  }
+
+  button {
+    font-size: 20px;
+  }
+}

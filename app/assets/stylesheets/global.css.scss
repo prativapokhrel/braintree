@@ -1,0 +1,70 @@
+// Docs Index
+
+#docs {
+  .new-doc {
+    text-align: center;
+    p {
+      font-size: 20px;
+    }
+
+    .button {
+      background-color: #5e81b3;
+      margin-top: 10px;
+    }
+  }
+  .doc {
+    background: #778899;
+    width: 90%;
+    min-height: 100px;
+    margin: 1rem 1%;
+    padding: 1.5rem 2.5%;
+    float: left;
+    border-radius: 2.9rem;
+    position: relative;
+    text-align: center;
+    .date {
+      position: absolute;
+      bottom: 0.25rem;
+      left: 5.5%;
+      color: white;
+      font-weight: lighter;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .content {
+      position: relative;
+      font-size: 2rem;
+    }
+  }
+}
+
+// DOC SHOW
+#doc_show {
+  .title {
+    color: #529ecc;
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(82, 158, 204, 0.2);
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.75;
+    text-align: center;
+  }
+
+  .buttons {
+    margin-top: 3rem;
+    text-align: center;
+    a.button {
+      padding: 0.2rem 1.5rem;
+      border-radius: 0.1rem;
+      text-decoration: none;
+      color: #529ecc;
+      border: 5px solid#529ECC;
+      background: transparent;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+$dark_gray: #2b2e2e;
+$light_gray: #c0c1c1;
+$green: #529ecc;
+
+body {
+  padding-top: 4.5rem;
+  font-family: "Dosis", sans-serif;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper_with_padding {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3.5rem 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.navbar {
+  background-color: #5e81b3;
+  height: 100px;
+}
+
+.content {
+  padding-top: 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 120%;
+}
+
+.button-css {
+  padding-top: 15px;
+  padding-right: 20px;
+}
+
+#user_remember_me {
+  margin-left: -32px;
+}

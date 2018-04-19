@@ -1,0 +1,14 @@
+.wrapper_with_padding
+  .col-sm-12.text-center
+
+    - if @result
+      %h1= @result[:header]
+      %section
+        %p{style: "font-size: 20px;"}= @result[:message]
+    - else
+      %section
+        %p{style: "font-size: 20px;"} Add another payment
+    %section
+      %a.button.primary.back{:href => new_payment_path}
+        %span{style: "font-size: 20px;"} Add another payment
+

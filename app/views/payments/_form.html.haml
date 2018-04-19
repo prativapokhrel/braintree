@@ -1,0 +1,36 @@
+.col-xs-6 
+  .form-group
+    = f.label :first_name
+    = f.text_field :first_name, placeholder: "First Name", class: "form-control", id: "payment-first-name", required: true
+          
+  .form-group
+    = f.label :last_name
+    = f.text_field :last_name, placeholder: "Last Name", class: "form-control", id: "payment-last-name", required: true
+          
+  .form-group
+    = f.label :email
+    = f.email_field :email, placeholder: "you@your-email-address.com", class: "form-control", id: "payment-email", required: true
+
+  .form-group
+    = f.label :phone
+    = f.text_field :phone, placeholder: "Phone Number", class: "form-control", id: "payment-phone"
+
+  .form-group
+
+    = f.label :note
+    = f.text_area :note, placeholder: "Optional", class: "form-control", id: "payment-note", rows: "10"
+
+  .form-group
+    = f.label :payment_amount
+    = f.number_field :amount, min: 1, step: :any, placeholder: "$00.00", class: "form-control", id: "payment-amount"
+
+  %p.hidden#client_token
+    = @client_token
+
+  .bt-drop-in-wrapper
+    #dropin-container
+  %input#nonce{:name => "payment_method_nonce", :type => "hidden"}
+
+  .Form-footer.text-center{style: "margin-bottom: 50px; margin-top: 40px;"}
+    %button.btn.btn-primary.btn-md.contact-form-submit-button{:type => "submit", :syle=>"margin-bottom: 100px;"}
+      %span Send Payment

@@ -1,0 +1,10 @@
+- content_for :js_footer do
+  = javascript_include_tag "braintree.js"
+
+.col-xs-12.col-md-12
+  = render partial: "/shared/alerts", :locals => {:error => @payment }
+.wrapper_with_padding
+
+  = form_for @payment, role: 'form' do |f|
+    = render partial: 'form', locals: {f: f}    
+

@@ -1,0 +1,24 @@
+!!!
+%html
+%head
+  %title Braintree | Your life's great!!
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' 
+  = javascript_include_tag 'application', 'data-turbolinks-track': 'reload' 
+  = csrf_meta_tags
+  = yield :js_header
+  %script{:src => "https://js.braintreegateway.com/web/dropin/1.7.0/js/dropin.min.js"}
+%body
+  = yield :alerts
+
+  %header
+    %nav.navbar.navbar-fixed-top
+      .collapse.navbar-collapse.content
+        %ul.navbar-nav
+          %h1= link_to "Braintree", root_path, class: 'logo'
+    
+  %p.notice= notice
+  %p.alert= alert
+
+  = yield
+
+
